@@ -16,8 +16,6 @@ class UserController {
       password,
     });
 
-    delete user.password;
-
     return response.json(user);
   }
 
@@ -30,8 +28,6 @@ class UserController {
     const user = await enableUser.execute({
       id,
     });
-
-    delete user.password;
 
     return response.json(user);
   }

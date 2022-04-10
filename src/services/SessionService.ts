@@ -43,8 +43,6 @@ class SessionService {
       expiresIn: '1d',
     });
 
-    delete user.password;
-
     return {
       token,
       user,
